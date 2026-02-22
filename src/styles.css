@@ -1,0 +1,206 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* Centered Layout */
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 80px auto;
+  background: white;
+  padding: 60px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Title */
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+/* Input */
+.doc-input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.doc-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons */
+/* Buttons - Unified System */
+.primary,
+.secondary {
+  height: 52px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Primary (Blue) */
+.primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.primary:hover {
+  background: #1e40af;
+}
+
+/* Secondary (Grey) */
+.secondary {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.secondary:hover {
+  background: #e5e7eb;
+}
+/* File Info Box */
+.file-list {
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* QR Section */
+.qr-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.qr-frame {
+  display: inline-block;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.qr-frame img {
+  width: 220px;
+  height: 220px;
+}
+
+.qr-filename {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.qr-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.qr-actions button {
+  flex: 1;
+}
+
+
+
+/* Background */
+.login-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 60px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+/* Title */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 35px;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-button:hover {
+  background: #1e40af;
+}
+
+.login-card {
+  background: white;
+  padding: 50px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
