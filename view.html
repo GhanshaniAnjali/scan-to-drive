@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Opening Document...</title>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
-    if (id) {
-      window.location.href = `https://drive.google.com/file/d/${id}/view`;
-    } else {
-      document.body.innerHTML = "Invalid file.";
-    }
-  </script>
-</head>
-<body>
-  Opening document...
-</body>
-</html>
+  if (id) {
+    // Force native browser PDF rendering (NOT Google viewer)
+    window.location.href = `https://drive.google.com/uc?export=download&id=${id}`;
+  } else {
+    document.body.innerHTML = "Invalid file.";
+  }
+</script>
